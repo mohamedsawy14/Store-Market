@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.conection.url">jdbc:mysql://localhost:3306/store_market?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibenate.connection.username">root</property>
+    <property name="hibenate.connection.password"/>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/store_market?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <mapping class="com.seniorsteps.storemarket.dal.hibernate.entity.Products"/>
+    <mapping class="com.seniorsteps.storemarket.dal.hibernate.entity.Cities"/>
+    <mapping class="com.seniorsteps.storemarket.dal.hibernate.entity.Catagories"/>
+    <mapping class="com.seniorsteps.storemarket.dal.hibernate.entity.ProductSizes"/>
+    <mapping class="com.seniorsteps.storemarket.dal.hibernate.entity.Branches"/>
+    <mapping class="com.seniorsteps.storemarket.dal.hibernate.entity.Sizes"/>
+    <mapping class="com.seniorsteps.storemarket.dal.hibernate.entity.Brands"/>
+    <mapping class="com.seniorsteps.storemarket.dal.hibernate.entity.Zones"/>
+  </session-factory>
+</hibernate-configuration>
